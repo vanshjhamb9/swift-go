@@ -46,8 +46,8 @@ const Index = () => {
       <nav className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-3">
-            <img src={swiftgoLogo} alt="SwiftGo Logo" className="h-10 w-10 object-contain" />
-            <span className="text-2xl font-bold text-gradient">SwiftGo</span>
+            <img src={swiftgoLogo} alt="SwiftGo Logo" className="h-20 w-20 object-contain" />
+      
           </div>
           <div className="hidden md:flex space-x-6">
             <a href="#home" className="hover:text-primary transition-smooth">Home</a>
@@ -558,8 +558,8 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
             <div className="flex items-center justify-center space-x-3 mb-4">
-              <img src={swiftgoLogo} alt="SwiftGo Logo" className="h-12 w-12 object-contain" />
-              <h3 className="text-2xl font-bold text-gradient">SwiftGo</h3>
+              <img src={swiftgoLogo} alt="SwiftGo Logo" className="h-24 w-24 object-contain" />
+              
             </div>
             <p className="text-lg text-muted-foreground font-medium">
               Smarter Commutes. Greener Cities. Better Lives.
