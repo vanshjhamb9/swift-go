@@ -66,7 +66,7 @@ const Index = () => {
         ></div>
         
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 fade-in">
+           <h1 className="text-5xl md:text-7xl font-bold mb-6 fade-in">
             <span className="text-gradient">SwiftGo</span>
             <br />
             <span className="text-foreground">Smarter Shared Rides</span>
@@ -76,7 +76,7 @@ const Index = () => {
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto slide-up">
             Affordable, reliable, and eco-friendly shuttle rides along fixed routes. 
-            Join the future of sustainable urban mobility.
+            Commute without the stress—book your seat, track your ride, and get moving with SwiftGo.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center scale-in">
@@ -106,8 +106,10 @@ const Index = () => {
             <div className="slide-up">
               <h3 className="text-3xl font-bold mb-6">Who We Are</h3>
               <p className="text-lg text-muted-foreground mb-6">
-                SwiftGo is a revolutionary ride-sharing platform that focuses on fixed routes, 
-                providing predictable, reliable, and eco-friendly transportation solutions for urban commuters.
+                At SwiftGo, we believe getting around the city shouldn't be a hassle. 
+                That's why we created a smart, shared ride solution that works—fixed routes, 
+                real-time tracking, and scheduled pickups. We're on a mission to make daily 
+                commutes more predictable, affordable, and sustainable.
               </p>
               
               <div className="space-y-4 mb-8">
@@ -231,6 +233,80 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Key Features Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Features</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Experience the future of urban transportation with SwiftGo's innovative features.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="card-gradient p-8 rounded-xl shadow-soft hover-scale">
+              <div className="text-primary mb-4">
+                <MapPin className="w-12 h-12" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4">Fixed Routes</h3>
+              <p className="text-muted-foreground">
+                SwiftGo runs on a network of predefined, efficient routes so you always know where you're going and when you'll get there.
+              </p>
+            </div>
+            
+            <div className="card-gradient p-8 rounded-xl shadow-soft hover-scale">
+              <div className="text-primary mb-4">
+                <Clock className="w-12 h-12" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4">Scheduled Rides</h3>
+              <p className="text-muted-foreground">
+                Choose a time slot that works for your schedule. Whether it's daily commutes or occasional trips, you're covered.
+              </p>
+            </div>
+            
+            <div className="card-gradient p-8 rounded-xl shadow-soft hover-scale">
+              <div className="text-primary mb-4">
+                <Navigation className="w-12 h-12" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4">Real-Time Tracking</h3>
+              <p className="text-muted-foreground">
+                Track your shuttle in real-time. No more waiting around or guessing when your ride will arrive.
+              </p>
+            </div>
+            
+            <div className="card-gradient p-8 rounded-xl shadow-soft hover-scale">
+              <div className="text-primary mb-4">
+                <DollarSign className="w-12 h-12" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4">Seamless Payments</h3>
+              <p className="text-muted-foreground">
+                Pay per ride or go for a subscription plan. Safe, secure, and cashless.
+              </p>
+            </div>
+            
+            <div className="card-gradient p-8 rounded-xl shadow-soft hover-scale">
+              <div className="text-primary mb-4">
+                <Smartphone className="w-12 h-12" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4">Easy Booking</h3>
+              <p className="text-muted-foreground">
+                Book your seat in just a few taps. Choose your pickup and drop-off stops and you're ready to go.
+              </p>
+            </div>
+            
+            <div className="card-gradient p-8 rounded-xl shadow-soft hover-scale">
+              <div className="text-primary mb-4">
+                <Leaf className="w-12 h-12" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4">Eco-Friendly</h3>
+              <p className="text-muted-foreground">
+                One shuttle = fewer cars on the road. Reduce congestion and your carbon footprint.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* App Features Section */}
       <section id="features" className="py-20 subtle-gradient">
         <div className="container mx-auto px-4">
@@ -332,14 +408,11 @@ const Index = () => {
 
           <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
             {[
-              { icon: MapPin, title: "Select Route", desc: "Choose your preferred route" },
-              { icon: Clock, title: "Choose Time", desc: "Pick your time slot" },
-              { icon: Users, title: "Pick Stops", desc: "Select pickup and drop points" },
-              { icon: DollarSign, title: "Confirm & Pay", desc: "Secure payment processing" },
-              { icon: Smartphone, title: "Track", desc: "Real-time ride tracking" },
-              { icon: CheckCircle, title: "Ride", desc: "Enjoy your journey" }
+              { icon: MapPin, title: "Find a Route", desc: "Explore routes available in your area" },
+              { icon: Users, title: "Book Your Ride", desc: "Select your stops and time slot" },
+              { icon: Smartphone, title: "Track & Ride", desc: "Get notified and track your shuttle" }
             ].map((step, index) => (
-              <div key={index} className="text-center group scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div key={index} className="text-center group scale-in col-span-2" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="relative mb-6">
                   <div className="w-20 h-20 hero-gradient rounded-full flex items-center justify-center mx-auto shadow-glow group-hover:scale-110 transition-bounce">
                     <step.icon className="h-10 w-10 text-white" />
@@ -347,7 +420,7 @@ const Index = () => {
                   <div className="absolute -top-2 -right-2 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">
                     {index + 1}
                   </div>
-                  {index < 5 && (
+                  {index < 2 && (
                     <ArrowRight className="hidden lg:block absolute top-8 -right-12 h-6 w-6 text-muted-foreground" />
                   )}
                 </div>

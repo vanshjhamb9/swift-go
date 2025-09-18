@@ -8,20 +8,24 @@ import {
 const FAQ = () => {
   const faqs = [
     {
-      question: "Where is SwiftGo available?",
-      answer: "SwiftGo is currently expanding to major metropolitan areas. Check our app or website for available service areas in your city. We're continuously adding new routes and locations."
+      question: "Is SwiftGo available in my city?",
+      answer: "We're expanding rapidly. Check our Route Finder to see if we operate in your area."
     },
     {
-      question: "How do cancellations work?",
-      answer: "You can cancel your ride up to 30 minutes before the scheduled departure time without any charges. Cancellations within 30 minutes may incur a small fee. Emergency cancellations are handled case-by-case."
+      question: "Can I cancel a booking?",
+      answer: "Yes, you can cancel or reschedule up to 30 minutes before your scheduled pickup."
     },
     {
-      question: "What are the booking rules?",
-      answer: "Book rides up to 7 days in advance. Same-day bookings are available subject to seat availability. You need to arrive at your pickup point at least 5 minutes before the scheduled time."
+      question: "Are the routes flexible?",
+      answer: "Our shuttles run on fixed routes to maintain timeliness and efficiency."
     },
     {
-      question: "How does SwiftGo ensure safety?",
-      answer: "All drivers undergo thorough background checks and training. Vehicles are regularly inspected and maintained. We provide real-time tracking, emergency contacts, and 24/7 customer support for your safety."
+      question: "Do I need to book in advance?",
+      answer: "We recommend booking at least 15 minutes before departure to ensure seat availability."
+    },
+    {
+      question: "Is SwiftGo safe?",
+      answer: "Absolutely. All drivers are background-checked, vehicles are tracked, and safety is our top priority."
     },
     {
       question: "What payment methods are accepted?",
@@ -30,10 +34,6 @@ const FAQ = () => {
     {
       question: "Can I modify my booking after confirmation?",
       answer: "Yes, you can modify pickup/drop points and time slots up to 2 hours before departure, subject to availability. Changes may affect the fare based on the new route."
-    },
-    {
-      question: "What happens if I miss my ride?",
-      answer: "If you miss your scheduled ride, you can book the next available slot. No-show fees may apply. We recommend arriving 5 minutes early to ensure you don't miss your ride."
     },
     {
       question: "Do you offer corporate packages?",
