@@ -62,7 +62,7 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section id="home" className="relative min-h-screen mt-10 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 hero-gradient opacity-10"></div>
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-20"
