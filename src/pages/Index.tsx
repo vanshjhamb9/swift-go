@@ -88,7 +88,7 @@ const Index = () => {
               <Download className="mr-2" />
               Download App
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-white/20 text-white hover:bg-white/10">
+            <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-white/20 text-muted-foreground hover:bg-white/10">
               <MapPin className="mr-2" />
               Explore Routes
             </Button>
