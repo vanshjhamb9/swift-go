@@ -107,8 +107,8 @@ const Index = () => {
               Contact
             </a>
           </div>
-          <Button onClick={downloadApk} variant="default" size="sm">
-            <a href="/swift_go_user.apk">
+          <Button variant="default" size="sm">
+            <a href="/swift_go_user.apk" download="SwiftGo.apk">
               Download App
             </a>
           </Button>
@@ -146,7 +146,9 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center scale-in">
             <Button variant="hero" size="lg" className="text-lg px-8 py-6">
               <Download className="mr-2" />
-                Download App
+                <a href="/swift_go_user.apk" download="SwiftGo.apk">
+                  Download App
+                </a>
             </Button>
             <Button
               variant="outline"

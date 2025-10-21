@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/swift_go_user.apk",
-      "destination": "https://github.com/vanshjhamb9/swift-go/releases/download/apk/swift_go_user.apk"
-    }
-  ]
-}
