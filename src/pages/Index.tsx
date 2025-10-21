@@ -25,6 +25,32 @@ import heroImage from "@/assets/hero-image.jpg";
 import appMockup from "@/assets/app-mockup.jpg";
 import swiftgoLogo from "@/assets/swiftgo-logo.jpg";
 
+const downloadApk = async () => {
+  try {
+    const response = await fetch('https://github.com/vanshjhamb9/swift-go/releases/download/apk/swift_go_user.apk');
+
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    console.log("gop");
+
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'SwiftGo.apk'; // Optional: override file name
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    window.URL.revokeObjectURL(url);
+  } catch (error) {
+    console.error('Download failed:', error);
+    alert('Failed to download APK. Please try again later.');
+  }
+};
+
+
 const Index = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -81,8 +107,8 @@ const Index = () => {
               Contact
             </a>
           </div>
-          <Button variant="default" size="sm">
-            <a href="/swift_go_user.apk" download>
+          <Button onClick={downloadApk} variant="default" size="sm">
+            <a href="/swift_go_user.apk">
               Download App
             </a>
           </Button>
@@ -120,9 +146,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center scale-in">
             <Button variant="hero" size="lg" className="text-lg px-8 py-6">
               <Download className="mr-2" />
-              <a href="/swift_go_user.apk" download="SwiftGo.apk">
                 Download App
-              </a>
             </Button>
             <Button
               variant="outline"
