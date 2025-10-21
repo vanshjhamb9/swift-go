@@ -82,7 +82,7 @@ const Index = () => {
             </a>
           </div>
           <Button variant="default" size="sm">
-            <a href="/swift_go_user.apk" download="SwiftGo.apk">
+            <a href="/swift_go_user.apk" download>
               Download App
             </a>
           </Button>

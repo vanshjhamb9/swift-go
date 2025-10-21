@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/swift_go_user.apk",
+      "destination": "/api/download",
+      "permanent": false
+    }
+  ]
+}
