@@ -27,7 +27,7 @@ import swiftgoLogo from "@/assets/swiftgo-logo.jpg";
 
 const downloadApk = async () => {
   try {
-    const response = await fetch('https://github.com/vanshjhamb9/swift-go/releases/download/apk/swift_go_user.apk');
+    const response = await fetch('https://github.com/vanshjhamb9/swift-go/releases/download/new-apk/app-release.apk');
 
     if (!response.ok) {
       throw new Error('Network response was not ok');
