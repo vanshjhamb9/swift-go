@@ -107,11 +107,19 @@ const Index = () => {
               Contact
             </a>
           </div>
-          <Button variant="default" size="sm">
+          <div>
+          <Button variant="default" size="sm" style={{ marginRight: "8px" }}>
             <a href="/swift_go_user.apk" download="SwiftGo.apk">
-              Download App
+              Download User App
             </a>
           </Button>
+          <Button variant="default" size="sm">
+            <a href="/swift_go_driver.apk" download="SwiftGo.apk">
+              Download Driver App
+            </a>
+          </Button>
+          </div>
+          
         </div>
       </nav>
 
@@ -144,12 +152,16 @@ const Index = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center scale-in">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-              <Download className="mr-2" />
-                <a href="/swift_go_user.apk" download="SwiftGo.apk">
-                  Download App
-                </a>
-            </Button>
+            <Button variant="default" size="sm">
+            <a href="/swift_go_user.apk" download="SwiftGo.apk">
+              Download User App
+            </a>
+          </Button>
+          <Button variant="default" size="sm">
+            <a href="/swift_go_driver.apk" download="SwiftGo.apk">
+              Download Driver App
+            </a>
+          </Button>
             <Button
               variant="outline"
               size="lg"
