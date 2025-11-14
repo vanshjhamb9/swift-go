@@ -153,12 +153,12 @@ const Index = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center scale-in">
             <Button variant="default" size="sm">
-            <a href="/swift_go_user.apk" download="SwiftGo.apk">
+            <a href="/swift_go_user.apk" download="SwiftGo User.apk">
               Download User App
             </a>
           </Button>
           <Button variant="default" size="sm">
-            <a href="/swift_go_driver.apk" download="SwiftGo.apk">
+            <a href="/swift_go_driver.apk" download="SwiftGo Partner.apk">
               Download Driver App
             </a>
           </Button>
