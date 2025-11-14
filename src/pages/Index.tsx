@@ -109,13 +109,13 @@ const Index = () => {
           </div>
           <div>
           <Button variant="default" size="sm" style={{ marginRight: "8px" }}>
-            <a href="/swift_go_user.apk" download="SwiftGo.apk">
+            <a href="/swift_go_user.apk" download="SwiftGo User.apk">
               Download User App
             </a>
           </Button>
           <Button variant="default" size="sm">
-            <a href="/swift_go_driver.apk" download="SwiftGo.apk">
-              Download Driver App
+            <a href="/swift_go_driver.apk" download="SwiftGo Partner.apk">
+              Download Partner App
             </a>
           </Button>
           </div>
